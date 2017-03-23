@@ -1,6 +1,6 @@
 var express = require('express');
 var router = require('./config/router');
-var User = require('./models/user-model');
+// var User = require('./models/user-model');
 var bodyParser = require('body-parser');
 var layouts = require('express-ejs-layouts');
 var methodOverride = require('method-override');
@@ -37,7 +37,6 @@ app.use(methodOverride(function (req) {
     return method;
   }
 }));
-
 
 app.use(router);
 
